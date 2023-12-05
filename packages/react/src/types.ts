@@ -66,6 +66,11 @@ export interface LoginButtonProps {
 	 * The version of the Telegram widget to deal with browser caching.
 	 */
 	widgetVersion?: number | string;
+
+	/**
+	 * If the button should be hidden. If set to true, make sure you pass a ref from the parent component to the <LoginButton /> component and programmatically call `clickTelegramButton()` on the ref to start the login process.
+	 */
+	hidden?: boolean;
 }
 
 /**
